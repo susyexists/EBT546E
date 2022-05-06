@@ -1,0 +1,5 @@
+&bands
+outdir = './out'
+prefix = 'Cu'
+filband = 'Cu.bands.dat'
+/

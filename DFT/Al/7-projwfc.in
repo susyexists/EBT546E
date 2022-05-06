@@ -1,0 +1,6 @@
+&PROJWFC
+  prefix= 'Al',
+  outdir= './outdir/',
+  filpdos= 'pdos.dat'
+  kresolveddos = .true.
+/

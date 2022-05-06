@@ -1,0 +1,7 @@
+&DOS
+  prefix='Graphene',
+  outdir = './outdir'
+  fildos='dos.dat',
+  emin=-5.0,
+  emax=5.0
+/

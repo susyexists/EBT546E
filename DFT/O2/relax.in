@@ -1,0 +1,27 @@
+
+    &control
+    calculation = 'relax'
+    prefix = 'O2'
+    pseudo_dir = './'
+    outdir="./out"
+    /
+    &system
+        ibrav=1, 
+        celldm(1) =30, 
+        nat=2, 
+        ntyp=1,
+        ecutwfc=100
+    /
+    &electrons
+        conv_thr=1e-8
+    /
+    &ions
+    /
+    ATOMIC_SPECIES
+     O  15.999  O.pbe-n-kjpaw_psl.1.0.0.UPF
+    ATOMIC_POSITIONS (angstrom)
+     O 0.00 0.00 0.00
+     O 1 0.00 0.00
+    K_POINTS (automatic)
+      1 1 1 0 0 0 
+    
