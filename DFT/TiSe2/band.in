@@ -1,0 +1,40 @@
+&CONTROL
+  calculation = 'bands'
+  etot_conv_thr =   3.0000000000d-05
+  forc_conv_thr =   1.0000000000d-04
+  outdir = './out/'
+  prefix = 'TiSe2'
+  pseudo_dir = './pseudo/'
+  tprnfor = .true.
+  tstress = .true.
+/
+&SYSTEM
+  degauss =   0.01
+  ecutrho =   320
+  ecutwfc =   40
+  ibrav = 0
+  nat = 3
+  ntyp = 2
+  occupations = 'smearing'
+  smearing = 'fd'
+/
+&ELECTRONS
+  conv_thr =   1.0000000000d-8
+/
+ATOMIC_SPECIES
+Se     78.96 Se_pbe_v1.uspp.F.UPF
+Ti     47.867 ti_pbe_v1.4.uspp.F.UPF
+ATOMIC_POSITIONS crystal
+Ti           0.0000000000       0.0000000000       0.0000000000 
+Se           0.3333333300       0.6666666700       0.2311810000 
+Se           0.6666666700       0.3333333300       0.7688190000 
+ K_POINTS crystal_b
+4
+    0.0000000000 0.000000000 0.000000000 20 ! G
+    0.000000000  0.500000000 0.000000000 20 ! M
+    0.3333333333 0.333333333 0.000000000 20 ! K
+    0.0000000000 0.000000000 0.000000000 20 ! G
+CELL_PARAMETERS angstrom
+      3.5442620600       0.0000000000       0.0000000000
+     -1.7721310300       3.0694209816       0.0000000000
+      0.0000000000       0.0000000000       6.6938060000

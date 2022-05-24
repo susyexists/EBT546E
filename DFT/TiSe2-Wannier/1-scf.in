@@ -1,0 +1,35 @@
+&CONTROL
+  calculation = 'scf'
+  outdir = './out/'
+  prefix = 'TiSe2'
+  pseudo_dir = './pseudo/'
+/
+&SYSTEM
+  degauss =   0.01
+  ecutrho =   320
+  ecutwfc =   40
+  ibrav = 0
+  nat = 3
+  ntyp = 2
+  occupations = 'smearing'
+  smearing = 'fd'
+/
+&ELECTRONS
+  conv_thr =   1.0000000000d-8
+/
+ATOMIC_SPECIES
+Se     78.96 Se_pbe_v1.uspp.F.UPF
+Ti     47.867 ti_pbe_v1.4.uspp.F.UPF
+ATOMIC_POSITIONS crystal
+Ti           0.0000000000       0.0000000000       0.0000000000 
+Se           0.3333333300       0.6666666700       0.2311810000 
+Se           0.6666666700       0.3333333300       0.7688190000 
+
+CELL_PARAMETERS angstrom
+      3.5442620600       0.0000000000       0.0000000000
+     -1.7721310300       3.0694209816       0.0000000000
+      0.0000000000       0.0000000000       6.6938060000
+
+
+K_POINTS automatic
+11 11 1 0 0 0

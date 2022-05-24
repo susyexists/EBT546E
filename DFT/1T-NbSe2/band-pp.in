@@ -1,0 +1,6 @@
+&bands
+outdir = './out'
+prefix = '1T-NbSe2'
+filband = 'bands.dat'
+!plot_2d=.true
+/
