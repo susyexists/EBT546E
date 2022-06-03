@@ -1,0 +1,10 @@
+&inputph
+  prefix   = 'Si',
+  fildyn   = 'Si.dyn',
+  outdir   = './out'
+  ldisp    = .true.,
+  trans    = .true.,
+  nq1=3,
+  nq2=3,
+  nq3=3,
+ /x

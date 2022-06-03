@@ -1,0 +1,30 @@
+&CONTROL
+  calculation = 'scf'
+  outdir = './out/'
+  prefix = 'Si'
+  pseudo_dir = './pseudo/'
+/
+&SYSTEM
+  degauss =   0.01
+  ecutrho =   240
+  ecutwfc =   30
+  ibrav = 0
+  nat = 2
+  ntyp = 1
+  occupations = 'smearing'
+  smearing = 'fd'
+/
+&ELECTRONS
+  conv_thr =   1.0000000000d-8
+/
+ATOMIC_SPECIES
+Si     28.0855 Si.pbe-n-rrkjus_psl.1.0.0.UPF
+ATOMIC_POSITIONS crystal
+Si           0.7500000000       0.7500000000       0.7500000000 
+Si           0.5000000000       0.5000000000       0.5000000000 
+K_POINTS automatic
+6 6 6 0 0 0
+CELL_PARAMETERS angstrom
+      3.8669746500       0.0000000000       0.0000000000
+      1.9334873250       3.3488982827       0.0000000000
+      1.9334873250       1.1162994276       3.1573715803

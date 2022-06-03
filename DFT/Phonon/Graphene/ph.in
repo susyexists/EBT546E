@@ -1,0 +1,10 @@
+&inputph
+  prefix   = 'Graphene',
+  fildyn   = 'Graphene.dyn',
+  outdir   = './out'
+  ldisp    = .true.,
+  trans    = .true.,
+  nq1=6,
+  nq2=6,
+  nq3=1,
+ /
